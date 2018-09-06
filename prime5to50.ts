@@ -1,6 +1,8 @@
 function prime5to50(): string {
 	let message : string = " "
 
+	var i;
+
 	// TODO: fill up the message string with the proper content.
 	for(i = 5; i < 51; i++) {
 	    if (is_prime(i) == true) {
@@ -12,7 +14,8 @@ function prime5to50(): string {
 }
 
 // You may use additional helper functions.
-function is_prime(n: int): Boolean {
+function is_prime(n): Boolean {
+    var i;
     for(i = 2; i < n; i++) {
 	if (n % i == 0) {
 	    return false
